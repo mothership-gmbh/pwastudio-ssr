@@ -1,0 +1,11 @@
+{{> templates/open-document}}
+
+  <title>{{ title }}</title>
+
+  {{> templates/open-body}}
+
+    <h1>This is from an UPWARD template</h1>
+    <div>The next element is the container for the React app</div>
+    <div id="root"></div>
+
+  {{> templates/close-document}}
