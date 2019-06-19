@@ -10,6 +10,16 @@ middleware, so it can be published as a single package and used in every UPWARD 
 
 To start the server use `npm run start`.
 
+## Todo
+1) Client demo: App should work on the client
+    - Webpack setup for client
+    - Include client app in UPWARD
+    - see if it works as intended :)
+2) build a little demo app with tec-stack like PWAStudio
+    - React Router (server side: I think only wrapping the app in StaticRouter should do it: https://www.apollographql.com/docs/react/features/server-side-rendering/#server-side-rendering)
+    - Redux (some work on server side too: https://github.com/zeit/next.js/issues/2347#issuecomment-310724179)
+    - maybe some GraphQl queries
+
 ## Dependencies
 - React: React is only a dev dependency, because we do not want this middleware be dependent on React. 
     Just for the ease of development, the React-app itself is tightly coupled.
