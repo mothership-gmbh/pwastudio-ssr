@@ -1,10 +1,13 @@
 # pwastudio-ssr
 Goal of this project is to build a express middleware to do SSR for a PWAStudio application.
-This middleware would be run after the UPWARD middleware. Like this, UPWARD can stay as it is and we still get the benefits of SSR.
+This middleware would be run after the UPWARD middleware. Like this, UPWARD can stay as it is and we still get the benefits of SSR.  
 
 ## Setup
 Just use `npm install` to install this project.  
-To build the server use `npm run build`.  
+
+To build the server use `npm run build`. For now this builds the whole server, moving forward this should build only the
+middleware, so it can be published as a single package and used in every UPWARD setup.
+
 To start the server use `npm run start`.
 
 ## Dependencies
