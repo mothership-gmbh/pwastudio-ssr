@@ -22,7 +22,7 @@ async function serve() {
     // To pull it into the official repo, createUpwardServer has to be slightly altered to send response after use of
     // upward middleware
 
-    //app.use(upward);
+    app.use(upward);
     app.use(ssr);
     app.listen(basePort, () => console.log( // eslint-disable-line no-console
         `app Server is now running on http://localhost:${basePort}`

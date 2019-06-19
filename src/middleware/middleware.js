@@ -33,8 +33,8 @@ var ssr = function (req, res, next) {
         const html = <Html content={content} state={initialState} />;
 
         res.status(200);
-        res.send(`<!doctype html>\n${ReactDOM.renderToStaticMarkup(html)}`);
-        res.end();
+        res.body = res.body + `<!doctype html>\n${ReactDOM.renderToStaticMarkup(html)}`;
+        res.send(res.body);
     });
 };
 

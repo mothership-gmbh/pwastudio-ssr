@@ -8,11 +8,8 @@
     "start": "node dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/niklaswolf/pwastudio-ssr.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/niklaswolf/pwastudio-ssr.git",
+  "author": "Niklas Wolf <wolfniklas94@web.de>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/niklaswolf/pwastudio-ssr/issues"
@@ -23,7 +20,6 @@
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "@magento/upward-js": "^2.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-module-resolver": "^3.2.0",
@@ -33,13 +29,17 @@
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
+    "@magento/upward-js": "/Users/niklas/Code/pwa-studio/packages/upward-js",
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.2",
     "apollo-link-http": "latest",
     "express": "latest",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "node-fetch": "latest",
     "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6",
-    "react-router": "^5.0.1",
-    "node-fetch": "latest"
-  }
+    "react-router": "^5.0.1"
+  },
+  "main": "index.js"
 }
