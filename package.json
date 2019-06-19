@@ -29,13 +29,11 @@
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
-    "@magento/upward-js": "/Users/niklas/Code/pwa-studio/packages/upward-js",
+    "@magento/upward-js": "github:mothership-gmbh/pwa-studio#magento-upward-js-v2.1.0-gitpkg",
     "apollo-cache-inmemory": "^1.6.2",
     "apollo-client": "^2.6.2",
     "apollo-link-http": "latest",
     "express": "latest",
-    "graphql": "^14.3.1",
-    "graphql-tag": "^2.10.1",
     "node-fetch": "latest",
     "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6",
