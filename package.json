@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run clean && webpack --config webpack.config.server.js -d --color --progress --profile",
-    "clean": "rimraf dist",
-    "start": "node dist/bundle.js",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "npm run clean:server && webpack --config webpack.config.server.js -d --color --progress --profile",
+    "build:client": "npm run clean:client && webpack --config webpack.config.client.js -d --color --progress --profile",
+    "clean:server": "rimraf dist/server",
+    "clean:client": "rimraf dist/client",
+    "start": "node dist/server/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/niklaswolf/pwastudio-ssr.git",

@@ -3,22 +3,32 @@ headers: response.headers
 body: response.body
 
 response:
-  resolver: inline
-  inline:
-    status:
-      resolver: inline
-      inline: 200
-    headers:
-      resolver: inline
-      inline:
-        content-type:
-          resolver: inline
-          inline: 'text/html'
-    body:
-      resolver: template
-      engine: mustache
-      template: './templates/shell.mst'
-      provide:
-        title:
-          resolver: inline
-          inline: 'This is the page title!'
+  when:
+    - matches: request.url.pathname
+      pattern: '^(.*)js$'
+      use: bundles
+  default:
+    resolver: inline
+    inline:
+      status:
+        resolver: inline
+        inline: 200
+      headers:
+        resolver: inline
+        inline:
+          content-type:
+            resolver: inline
+            inline: 'text/html'
+      body:
+        resolver: template
+        engine: mustache
+        template: './templates/shell.mst'
+        provide:
+          title:
+            resolver: inline
+            inline: 'This is the page title!'
+
+
+bundles:
+  directory:
+    inline: './dist'

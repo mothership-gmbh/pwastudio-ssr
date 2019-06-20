@@ -5,20 +5,22 @@ This middleware would be run after the UPWARD middleware. Like this, UPWARD can 
 ## Setup
 Just use `npm install` to install this project.  
 
-To build the server use `npm run build`. For now this builds the whole server, moving forward this should build only the
-middleware, so it can be published as a single package and used in every UPWARD setup.
+To build the server use `npm run build`. For now this builds the whole project, including server and client app.  
+Moving forward this should build only the middleware, so it can be published as a single package and used in every UPWARD setup.
 
 To start the server use `npm run start`.
 
-## Todo
+## Done
 1) Client demo: App should work on the client
     - Webpack setup for client
     - Include client app in UPWARD
     - see if it works as intended :)
-2) build a little demo app with tec-stack like PWAStudio
+## Todo
+1) build a little demo app with tec-stack like PWAStudio
     - React Router (server side: I think only wrapping the app in StaticRouter should do it: https://www.apollographql.com/docs/react/features/server-side-rendering/#server-side-rendering)
     - Redux (some work on server side too: https://github.com/zeit/next.js/issues/2347#issuecomment-310724179)
     - maybe some GraphQl queries
+
 
 ## Dependencies
 - React: React is only a dev dependency, because we do not want this middleware be dependent on React. 

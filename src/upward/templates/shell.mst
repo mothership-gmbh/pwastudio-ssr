@@ -6,6 +6,7 @@
 
     <h1>This is from an UPWARD template</h1>
     <div>The next element is the container for the React app</div>
-    ###marker###
+    <div id="root">###marker###</div>
 
+    <script src="/client/bundle.js"></script>
   {{> templates/close-document}}
